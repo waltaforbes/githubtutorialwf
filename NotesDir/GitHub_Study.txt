@@ -1,0 +1,5 @@
+Introduction to GitHubhttps://learn.microsoft.com/en-us/training/modules/introduction-to-github/
+	REQUIRED LEARNING FOR PROGRAMMING!
+	
+	[Wed.Oct.30.2024] Left off @: https://learn.microsoft.com/en-us/training/modules/introduction-to-github/3-components-of-github-flow
+		PARENT (THE COURSE ITSELF): https://learn.microsoft.com/en-us/training/modules/introduction-to-github/
