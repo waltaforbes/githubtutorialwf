@@ -1,0 +1,38 @@
+PS C:\Users\WaltForbes\OneDrive\Work\Training\GitHub\repo1.ghtutorialwf\githubtutorialwf> git status
+On branch branch-nondefault-1
+Your branch is ahead of 'origin/branch-nondefault-1' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        git-log-Sun-Apr-21-2025.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+PS C:\Users\WaltForbes\OneDrive\Work\Training\GitHub\repo1.ghtutorialwf\githubtutorialwf> git add .\git-log-Sun-Apr-21-2025.txt
+PS C:\Users\WaltForbes\OneDrive\Work\Training\GitHub\repo1.ghtutorialwf\githubtutorialwf> git status
+On branch branch-nondefault-1
+Your branch is ahead of 'origin/branch-nondefault-1' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   git-log-Sun-Apr-21-2025.txt
+
+PS C:\Users\WaltForbes\OneDrive\Work\Training\GitHub\repo1.ghtutorialwf\githubtutorialwf> git branch
+* branch-nondefault-1
+  main
+PS C:\Users\WaltForbes\OneDrive\Work\Training\GitHub\repo1.ghtutorialwf\githubtutorialwf> git commit -m "git commands log for Sun.Apr.21.2025 added"
+[branch-nondefault-1 78747bb] git commands log for Sun.Apr.21.2025 added
+ 1 file changed, 270 insertions(+)
+ create mode 100644 git-log-Sun-Apr-21-2025.txt
+PS C:\Users\WaltForbes\OneDrive\Work\Training\GitHub\repo1.ghtutorialwf\githubtutorialwf> git push origin branch-nondefault-1
+Enumerating objects: 9, done.
+Counting objects: 100% (9/9), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (7/7), done.
+Writing objects: 100% (7/7), 105.11 KiB | 13.14 MiB/s, done.
+Total 7 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (1/1), done.
+To https://github.com/waltaforbes/githubtutorialwf
+   5e99ab2..78747bb  branch-nondefault-1 -> branch-nondefault-1
+PS C:\Users\WaltForbes\OneDrive\Work\Training\GitHub\repo1.ghtutorialwf\githubtutorialwf>
