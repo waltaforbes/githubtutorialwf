@@ -1,0 +1,270 @@
+Windows PowerShell
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Install the latest PowerShell for new features and improvements! https://aka.ms/PSWindows
+
+PS C:\Users\WaltForbes\OneDrive\Work\Training\GitHub\repo1.ghtutorialwf> git init
+Initialized empty Git repository in C:/Users/WaltForbes/OneDrive/Work/Training/GitHub/repo1.ghtutorialwf/.git/
+PS C:\Users\WaltForbes\OneDrive\Work\Training\GitHub\repo1.ghtutorialwf> git clone https://github.com/waltaforbes/githubtutorialwf
+Cloning into 'githubtutorialwf'...
+info: please complete authentication in your browser...
+remote: Enumerating objects: 16, done.
+remote: Counting objects: 100% (16/16), done.
+remote: Compressing objects: 100% (13/13), done.
+remote: Total 16 (delta 3), reused 0 (delta 0), pack-reused 0 (from 0)
+Receiving objects: 100% (16/16), 12.32 KiB | 3.08 MiB/s, done.
+Resolving deltas: 100% (3/3), done.
+PS C:\Users\WaltForbes\OneDrive\Work\Training\GitHub\repo1.ghtutorialwf> git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        githubtutorialwf/
+
+nothing added to commit but untracked files present (use "git add" to track)
+PS C:\Users\WaltForbes\OneDrive\Work\Training\GitHub\repo1.ghtutorialwf> cd .\githubtutorialwf\
+PS C:\Users\WaltForbes\OneDrive\Work\Training\GitHub\repo1.ghtutorialwf\githubtutorialwf> git pull origin main
+remote: Enumerating objects: 1, done.
+remote: Counting objects: 100% (1/1), done.
+remote: Total 1 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+Unpacking objects: 100% (1/1), 921 bytes | 65.00 KiB/s, done.
+From https://github.com/waltaforbes/githubtutorialwf
+ * branch            main       -> FETCH_HEAD
+   41020e0..1e4678b  main       -> origin/main
+Updating 41020e0..1e4678b
+Fast-forward
+ NotesDir/what-is-github.page | 22 ++++++++++++++++++++++
+ 1 file changed, 22 insertions(+)
+ create mode 100644 NotesDir/what-is-github.page
+PS C:\Users\WaltForbes\OneDrive\Work\Training\GitHub\repo1.ghtutorialwf\githubtutorialwf> git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+PS C:\Users\WaltForbes\OneDrive\Work\Training\GitHub\repo1.ghtutorialwf\githubtutorialwf> git branch
+* main
+PS C:\Users\WaltForbes\OneDrive\Work\Training\GitHub\repo1.ghtutorialwf\githubtutorialwf> git pull origin branch-nondefault-1
+From https://github.com/waltaforbes/githubtutorialwf
+ * branch            branch-nondefault-1 -> FETCH_HEAD
+Already up to date.
+PS C:\Users\WaltForbes\OneDrive\Work\Training\GitHub\repo1.ghtutorialwf\githubtutorialwf> git branch
+* main
+PS C:\Users\WaltForbes\OneDrive\Work\Training\GitHub\repo1.ghtutorialwf\githubtutorialwf> git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+PS C:\Users\WaltForbes\OneDrive\Work\Training\GitHub\repo1.ghtutorialwf\githubtutorialwf> git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        NotesDir/GitHub_Study.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+PS C:\Users\WaltForbes\OneDrive\Work\Training\GitHub\repo1.ghtutorialwf\githubtutorialwf> git add .\NotesDir\GitHub_Study.txt
+PS C:\Users\WaltForbes\OneDrive\Work\Training\GitHub\repo1.ghtutorialwf\githubtutorialwf> git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   NotesDir/GitHub_Study.txt
+
+PS C:\Users\WaltForbes\OneDrive\Work\Training\GitHub\repo1.ghtutorialwf\githubtutorialwf> git commit -m "GitHub_Study.txt notes file added to NotesDir in this repo."
+Author identity unknown
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'WaltForbes@elite840g6.(none)')
+PS C:\Users\WaltForbes\OneDrive\Work\Training\GitHub\repo1.ghtutorialwf\githubtutorialwf> git config --global user.email "walt.a.forbes@gmail.com"
+PS C:\Users\WaltForbes\OneDrive\Work\Training\GitHub\repo1.ghtutorialwf\githubtutorialwf> git config --global user.name "waltaforbes"
+PS C:\Users\WaltForbes\OneDrive\Work\Training\GitHub\repo1.ghtutorialwf\githubtutorialwf> git commit -m "GitHub_Study.txt notes file added to NotesDir in this repo.
+                                                                                        > git commit -m "GitHub_Study.txt notes file added to NotesDir in this repo."
+[main a16d449] GitHub_Study.txt notes file added to NotesDir in this repo.
+ 1 file changed, 5 insertions(+)
+ create mode 100644 NotesDir/GitHub_Study.txt
+PS C:\Users\WaltForbes\OneDrive\Work\Training\GitHub\repo1.ghtutorialwf\githubtutorialwf> git status
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+PS C:\Users\WaltForbes\OneDrive\Work\Training\GitHub\repo1.ghtutorialwf\githubtutorialwf> git push
+Enumerating objects: 6, done.
+Counting objects: 100% (6/6), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (4/4), 590 bytes | 590.00 KiB/s, done.
+Total 4 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/waltaforbes/githubtutorialwf
+   1e4678b..a16d449  main -> main
+PS C:\Users\WaltForbes\OneDrive\Work\Training\GitHub\repo1.ghtutorialwf\githubtutorialwf> git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        NotesDir/Intro to Github by Microsoft Learn.docx
+
+nothing added to commit but untracked files present (use "git add" to track)
+PS C:\Users\WaltForbes\OneDrive\Work\Training\GitHub\repo1.ghtutorialwf\githubtutorialwf> git add '.\NotesDir\Intro to Github by Microsoft Learn.docx'
+PS C:\Users\WaltForbes\OneDrive\Work\Training\GitHub\repo1.ghtutorialwf\githubtutorialwf> git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   NotesDir/Intro to Github by Microsoft Learn.docx
+
+PS C:\Users\WaltForbes\OneDrive\Work\Training\GitHub\repo1.ghtutorialwf\githubtutorialwf> git commit -m "AI notes in Word file."
+[main 16357df] AI notes in Word file.
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 NotesDir/Intro to Github by Microsoft Learn.docx
+PS C:\Users\WaltForbes\OneDrive\Work\Training\GitHub\repo1.ghtutorialwf\githubtutorialwf> git status
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+PS C:\Users\WaltForbes\OneDrive\Work\Training\GitHub\repo1.ghtutorialwf\githubtutorialwf> git push origin main
+Enumerating objects: 6, done.
+Counting objects: 100% (6/6), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (4/4), 102.68 KiB | 20.54 MiB/s, done.
+Total 4 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/waltaforbes/githubtutorialwf
+   a16d449..16357df  main -> main
+PS C:\Users\WaltForbes\OneDrive\Work\Training\GitHub\repo1.ghtutorialwf\githubtutorialwf> git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   NotesDir/Intro to Github by Microsoft Learn.docx
+
+no changes added to commit (use "git add" and/or "git commit -a")
+PS C:\Users\WaltForbes\OneDrive\Work\Training\GitHub\repo1.ghtutorialwf\githubtutorialwf> git commit -am "Line added at the end."
+[main e929658] Line added at the end.
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+PS C:\Users\WaltForbes\OneDrive\Work\Training\GitHub\repo1.ghtutorialwf\githubtutorialwf> git push origin main
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (4/4), 15.43 KiB | 5.14 MiB/s, done.
+Total 4 (delta 3), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (3/3), completed with 3 local objects.
+To https://github.com/waltaforbes/githubtutorialwf
+   16357df..e929658  main -> main
+PS C:\Users\WaltForbes\OneDrive\Work\Training\GitHub\repo1.ghtutorialwf\githubtutorialwf> git branch
+* main
+PS C:\Users\WaltForbes\OneDrive\Work\Training\GitHub\repo1.ghtutorialwf\githubtutorialwf> git branch -a
+* main
+  remotes/origin/HEAD -> origin/main
+  remotes/origin/branch-nondefault-1
+  remotes/origin/main
+PS C:\Users\WaltForbes\OneDrive\Work\Training\GitHub\repo1.ghtutorialwf\githubtutorialwf> git branch -vv
+* main e929658 [origin/main] Line added at the end.
+PS C:\Users\WaltForbes\OneDrive\Work\Training\GitHub\repo1.ghtutorialwf\githubtutorialwf> git branch -avv
+* main                               e929658 [origin/main] Line added at the end.
+  remotes/origin/HEAD                -> origin/main
+  remotes/origin/branch-nondefault-1 5e99ab2 Create what-is-github.page
+  remotes/origin/main                e929658 Line added at the end.
+PS C:\Users\WaltForbes\OneDrive\Work\Training\GitHub\repo1.ghtutorialwf\githubtutorialwf> git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+PS C:\Users\WaltForbes\OneDrive\Work\Training\GitHub\repo1.ghtutorialwf\githubtutorialwf> git fetch origin
+PS C:\Users\WaltForbes\OneDrive\Work\Training\GitHub\repo1.ghtutorialwf\githubtutorialwf> git checkout -b branch-non-default1 origin/branch-non-default1
+fatal: 'origin/branch-non-default1' is not a commit and a branch 'branch-non-default1' cannot be created from it
+PS C:\Users\WaltForbes\OneDrive\Work\Training\GitHub\repo1.ghtutorialwf\githubtutorialwf> git checkout -b branch-nondefault-1 origin/branch-nondefault-1
+branch 'branch-nondefault-1' set up to track 'origin/branch-nondefault-1'.
+Switched to a new branch 'branch-nondefault-1'
+PS C:\Users\WaltForbes\OneDrive\Work\Training\GitHub\repo1.ghtutorialwf\githubtutorialwf> git branch
+* branch-nondefault-1
+  main
+PS C:\Users\WaltForbes\OneDrive\Work\Training\GitHub\repo1.ghtutorialwf\githubtutorialwf> git status
+On branch branch-nondefault-1
+Your branch is up to date with 'origin/branch-nondefault-1'.
+
+nothing to commit, working tree clean
+PS C:\Users\WaltForbes\OneDrive\Work\Training\GitHub\repo1.ghtutorialwf\githubtutorialwf> git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+PS C:\Users\WaltForbes\OneDrive\Work\Training\GitHub\repo1.ghtutorialwf\githubtutorialwf> git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+PS C:\Users\WaltForbes\OneDrive\Work\Training\GitHub\repo1.ghtutorialwf\githubtutorialwf> git checkout branch-nondefault-1
+Switched to branch 'branch-nondefault-1'
+Your branch is up to date with 'origin/branch-nondefault-1'.
+PS C:\Users\WaltForbes\OneDrive\Work\Training\GitHub\repo1.ghtutorialwf\githubtutorialwf> git status
+On branch branch-nondefault-1
+Your branch is up to date with 'origin/branch-nondefault-1'.
+
+nothing to commit, working tree clean
+PS C:\Users\WaltForbes\OneDrive\Work\Training\GitHub\repo1.ghtutorialwf\githubtutorialwf> git branch
+* branch-nondefault-1
+  main
+PS C:\Users\WaltForbes\OneDrive\Work\Training\GitHub\repo1.ghtutorialwf\githubtutorialwf> git checkout main -- "Intro to GitHub by Microsoft Learn.docx"
+error: pathspec 'Intro to GitHub by Microsoft Learn.docx' did not match any file(s) known to git
+PS C:\Users\WaltForbes\OneDrive\Work\Training\GitHub\repo1.ghtutorialwf\githubtutorialwf> git checkout main -- 'Intro to GitHub by Microsoft Learn.docx'
+error: pathspec 'Intro to GitHub by Microsoft Learn.docx' did not match any file(s) known to git
+PS C:\Users\WaltForbes\OneDrive\Work\Training\GitHub\repo1.ghtutorialwf\githubtutorialwf> git checkout main -- Intro\ to\ GitHub\ by\ Microsoft\ Learn.docx
+error: pathspec 'Intro\' did not match any file(s) known to git
+error: pathspec 'to\' did not match any file(s) known to git
+error: pathspec 'GitHub\' did not match any file(s) known to git
+error: pathspec 'by\' did not match any file(s) known to git
+error: pathspec 'Microsoft\' did not match any file(s) known to git
+error: pathspec 'Learn.docx' did not match any file(s) known to git
+PS C:\Users\WaltForbes\OneDrive\Work\Training\GitHub\repo1.ghtutorialwf\githubtutorialwf> git checkout main -- 'Intro\ to\ GitHub\ by\ Microsoft\ Learn.docx'
+error: pathspec 'Intro\ to\ GitHub\ by\ Microsoft\ Learn.docx' did not match any file(s) known to git
+PS C:\Users\WaltForbes\OneDrive\Work\Training\GitHub\repo1.ghtutorialwf\githubtutorialwf> git ls-tree -r main --name-only
+.gitignore
+LICENSE
+NotesDir/GitHub_Study.txt
+NotesDir/Intro to Github by Microsoft Learn.docx
+NotesDir/what-is-github.page
+README
+PS C:\Users\WaltForbes\OneDrive\Work\Training\GitHub\repo1.ghtutorialwf\githubtutorialwf> git checkout main -- 'NotesDir/Intro to Github by Microsoft Learn.docx'
+PS C:\Users\WaltForbes\OneDrive\Work\Training\GitHub\repo1.ghtutorialwf\githubtutorialwf> git status
+On branch branch-nondefault-1
+Your branch is up to date with 'origin/branch-nondefault-1'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   NotesDir/Intro to Github by Microsoft Learn.docx
+
+PS C:\Users\WaltForbes\OneDrive\Work\Training\GitHub\repo1.ghtutorialwf\githubtutorialwf> git add '.\NotesDir\Intro to Github by Microsoft Learn.docx'
+PS C:\Users\WaltForbes\OneDrive\Work\Training\GitHub\repo1.ghtutorialwf\githubtutorialwf> git status
+On branch branch-nondefault-1
+Your branch is up to date with 'origin/branch-nondefault-1'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   NotesDir/Intro to Github by Microsoft Learn.docx
+
+PS C:\Users\WaltForbes\OneDrive\Work\Training\GitHub\repo1.ghtutorialwf\githubtutorialwf> git commit -m "Intro to Github Word notes docx file now a part of the non-default branch"
+[branch-nondefault-1 0fdda32] Intro to Github Word notes docx file now a part of the non-default branch
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 NotesDir/Intro to Github by Microsoft Learn.docx
+PS C:\Users\WaltForbes\OneDrive\Work\Training\GitHub\repo1.ghtutorialwf\githubtutorialwf> notepad git-log-Sun-Apr-21-2025.txt
+PS C:\Users\WaltForbes\OneDrive\Work\Training\GitHub\repo1.ghtutorialwf\githubtutorialwf> git ls-tree -r main --name-only
