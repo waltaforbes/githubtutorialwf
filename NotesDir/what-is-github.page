@@ -1,0 +1,22 @@
+Branches: Current vs. New
+A branch in GitHub is essentially a separate version of a repository where you can make changes without affecting the main codebase.
+
+Your current branch is the one you’re working on at the moment.
+
+A new branch is a fresh copy of the repository that starts from a specific point (usually the default branch), allowing you to work on new features or fixes separately.
+
+Why Create a New Branch?
+In best practices, if you're working on the default branch (usually called main or master), you should create a new branch for your changes instead of committing directly to main. This keeps the default branch clean and avoids breaking existing functionality.
+
+Pull Request (PR) and Its Relevance
+A Pull Request (PR) is GitHub’s way of proposing changes to a repository. Once you’ve made changes on a new branch, a PR allows you to:
+
+Review and compare your changes against the default branch.
+
+Let others review, comment, and approve before merging.
+
+Keep collaboration smooth, ensuring quality control.
+
+In short, the tutorial is guiding you toward a best practice—working on a new branch, making changes, and using a PR to integrate those changes safely.
+
+Want help creating a branch and making a PR step by step? I’ve got you covered.
