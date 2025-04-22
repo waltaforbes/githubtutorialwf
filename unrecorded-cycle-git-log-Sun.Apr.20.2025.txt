@@ -1,38 +1,26 @@
 PS C:\Users\WaltForbes\OneDrive\Work\Training\GitHub\repo1.ghtutorialwf\githubtutorialwf> git status
 On branch branch-nondefault-1
-Your branch is ahead of 'origin/branch-nondefault-1' by 1 commit.
-  (use "git push" to publish your local commits)
-
-Untracked files:
-  (use "git add <file>..." to include in what will be committed)
-        git-log-Sun-Apr-21-2025.txt
-
-nothing added to commit but untracked files present (use "git add" to track)
-PS C:\Users\WaltForbes\OneDrive\Work\Training\GitHub\repo1.ghtutorialwf\githubtutorialwf> git add .\git-log-Sun-Apr-21-2025.txt
-PS C:\Users\WaltForbes\OneDrive\Work\Training\GitHub\repo1.ghtutorialwf\githubtutorialwf> git status
-On branch branch-nondefault-1
-Your branch is ahead of 'origin/branch-nondefault-1' by 1 commit.
-  (use "git push" to publish your local commits)
+Your branch is up to date with 'origin/branch-nondefault-1'.
 
 Changes to be committed:
   (use "git restore --staged <file>..." to unstage)
-        new file:   git-log-Sun-Apr-21-2025.txt
+        renamed:    git-log-Sun-Apr-21-2025.txt -> git-log-Sun-Apr-20-2025.txt
+        new file:   unrecorded-cycle-git-log-Sun.Apr.20.2025.txt
 
-PS C:\Users\WaltForbes\OneDrive\Work\Training\GitHub\repo1.ghtutorialwf\githubtutorialwf> git branch
-* branch-nondefault-1
-  main
-PS C:\Users\WaltForbes\OneDrive\Work\Training\GitHub\repo1.ghtutorialwf\githubtutorialwf> git commit -m "git commands log for Sun.Apr.21.2025 added"
-[branch-nondefault-1 78747bb] git commands log for Sun.Apr.21.2025 added
- 1 file changed, 270 insertions(+)
- create mode 100644 git-log-Sun-Apr-21-2025.txt
+PS C:\Users\WaltForbes\OneDrive\Work\Training\GitHub\repo1.ghtutorialwf\githubtutorialwf> git commit -m "File renamed for correct dating and unrecorded-cycle file created with contents/command history that can't make this commit (since those must be necessarily copied POST git push of these changes"
+[branch-nondefault-1 d941cbe] File renamed for correct dating and unrecorded-cycle file created with contents/command history that can't make this commit (since those must be necessarily copied POST git push of these changes
+ 2 files changed, 38 insertions(+)
+ rename git-log-Sun-Apr-21-2025.txt => git-log-Sun-Apr-20-2025.txt (100%)
+ create mode 100644 unrecorded-cycle-git-log-Sun.Apr.20.2025.txt
 PS C:\Users\WaltForbes\OneDrive\Work\Training\GitHub\repo1.ghtutorialwf\githubtutorialwf> git push origin branch-nondefault-1
-Enumerating objects: 9, done.
-Counting objects: 100% (9/9), done.
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
 Delta compression using up to 8 threads
-Compressing objects: 100% (7/7), done.
-Writing objects: 100% (7/7), 105.11 KiB | 13.14 MiB/s, done.
-Total 7 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
-remote: Resolving deltas: 100% (1/1), done.
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 1.05 KiB | 1.05 MiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
 To https://github.com/waltaforbes/githubtutorialwf
-   5e99ab2..78747bb  branch-nondefault-1 -> branch-nondefault-1
+   78747bb..d941cbe  branch-nondefault-1 -> branch-nondefault-1
+PS C:\Users\WaltForbes\OneDrive\Work\Training\GitHub\repo1.ghtutorialwf\githubtutorialwf> notepad .\unrecorded-cycle-git-log-Sun.Apr.20.2025.txt
 PS C:\Users\WaltForbes\OneDrive\Work\Training\GitHub\repo1.ghtutorialwf\githubtutorialwf>
